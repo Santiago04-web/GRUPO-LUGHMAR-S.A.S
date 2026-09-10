@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-dark: #0B1220;
+  --color-navy-card: #0F172A;
+  --color-navy-surface: #1E293B;
+  --color-blue-primary: #0B5ED7;
+  --color-blue-electric: #1677FF;
+  --color-blue-glow: #38BDF8;
+  --color-slate-light: #E5E7EB;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html, body {
+  background-color: #0B1220;
+  color: #F8FAFC;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B1220;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0B5ED7;
+}
+
+/* Tech grid & glow backgrounds */
+.tech-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(22, 119, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(22, 119, 255, 0.04) 1px, transparent 1px);
+}
+
+.tech-radial-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(22, 119, 255, 0.18) 0%, rgba(11, 18, 32, 0) 70%);
+}
+
+.tech-radial-card {
+  background: radial-gradient(circle at top left, rgba(22, 119, 255, 0.08) 0%, rgba(15, 23, 42, 0.95) 70%);
+}
+
+.glow-box {
+  box-shadow: 0 0 25px -5px rgba(22, 119, 255, 0.35);
+}
+
+.glow-border {
+  border-color: rgba(22, 119, 255, 0.3);
+}
+
+.glow-border:hover {
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: 0 0 20px -3px rgba(22, 119, 255, 0.3);
+}
+
